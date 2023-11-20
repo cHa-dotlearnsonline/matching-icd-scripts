@@ -35,7 +35,6 @@ for i in range(1, total_hia_rows):
             if match in matched_material2.keys():
                 my_diagnosis.append(matched_material2[match])
         new_worksheet.cell(row=i, column=2).value = ",".join(my_diagnosis)
-        # new_worksheet.append([HIA_data_ws[f"A{i}"].value.lower(), ",".join(my_diagnosis)])  
 
 new_workbook.save("HIA_1_B_Matched_to_Oid(5)_final.xlsx")
 HIA_data_wb.close()
